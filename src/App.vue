@@ -1,11 +1,13 @@
 <script>
 import HeaderComp from "./components/HeaderComp.vue";
 import ResultsComp from "./components/ResultsComp.vue";
+import PresentationComp from "./components/PresentationComp.vue";
 
 export default {
   components: {
     HeaderComp,
     ResultsComp,
+    PresentationComp,
   },
 };
 </script>
@@ -13,6 +15,7 @@ export default {
 <template>
   <HeaderComp />
   <ResultsComp />
+  <PresentationComp />
 </template>
 
 <style lang="scss">
