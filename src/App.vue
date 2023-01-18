@@ -5,6 +5,7 @@ import PresentationComp from "./components/PresentationComp.vue";
 import CoursesShop from "./components/shop/CoursesShop.vue";
 import CourseCards from "./components/shop/CoursesCards.vue";
 import BooksShop from "./components/shop/BooksShop.vue";
+import ClientsComp from "./components/ClientsComp.vue";
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     CoursesShop,
     CourseCards,
     BooksShop,
+    ClientsComp,
   },
 };
 </script>
@@ -24,6 +26,7 @@ export default {
   <PresentationComp />
   <CoursesShop />
   <BooksShop />
+  <ClientsComp />
 </template>
 
 <style lang="scss">
