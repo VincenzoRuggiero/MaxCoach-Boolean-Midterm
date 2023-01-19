@@ -6,6 +6,7 @@ import CoursesShop from "./components/shop/CoursesShop.vue";
 import CourseCards from "./components/shop/CoursesCards.vue";
 import BooksShop from "./components/shop/BooksShop.vue";
 import ClientsComp from "./components/ClientsComp.vue";
+import TestimonialsComp from "./components/TestimonialsComp.vue";
 
 export default {
   components: {
@@ -16,6 +17,7 @@ export default {
     CourseCards,
     BooksShop,
     ClientsComp,
+    TestimonialsComp,
   },
 };
 </script>
@@ -27,6 +29,7 @@ export default {
   <CoursesShop />
   <BooksShop />
   <ClientsComp />
+  <TestimonialsComp />
 </template>
 
 <style lang="scss">

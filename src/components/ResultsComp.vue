@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="container py-5">
-    <div class="row text-center">
+  <div class="container">
+    <div class="row text-align-center">
       <div class="col-3">
         <h3>1.926</h3>
         <p>FINISHED SESSIONS</p>

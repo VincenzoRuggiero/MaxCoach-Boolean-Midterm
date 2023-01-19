@@ -26,10 +26,8 @@ export default {
             <li>Fascinating examples of alpha man</li>
           </ul>
         </div>
-        <div class="col-6">
-          <div class="col-6 d-flex">
-            <BooksCards />
-          </div>
+        <div class="col-6 d-flex">
+          <BooksCards />
         </div>
       </div>
     </div>
