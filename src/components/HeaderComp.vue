@@ -1,15 +1,23 @@
 <script>
+import CTAbutton from "./CTAbutton.vue";
+
 export default {
   name: "HeaderComp",
+  components: {
+    CTAbutton,
+  },
 };
 </script>
 
 <template>
   <!-- Header  -->
-  <div class="background">
+  <div class="section-background">
     <div class="container header">
       <div class="div">
-        <img src="../assets/styles/images/dark-logo.png" alt="Site logo" />
+        <img
+          class="logo"
+          src="../assets/styles/images/dark-logo.png"
+          alt="Site logo" />
       </div>
       <nav>
         <ul>
@@ -33,18 +41,19 @@ export default {
     <div class="container mt-5">
       <div class="row align-items-center">
         <div class="col-6">
-          <span>I'm wingman</span>
-          <h1>Peace on Earth A Wonderful Wish But No Way</h1>
-          <p>
+          <span class="section-name">I'm wingman</span>
+          <h1 class="hero-heading">
+            Peace on Earth A Wonderful Wish But No Way
+          </h1>
+          <p class="hero-content">
             Success isn't overnight. It's when everyday you get a little better
             than the day before. It all adds up.
           </p>
-          <a href="#">Get Started For Free</a
-          ><span class="arrow-icon">&#x2192;</span>
+          <CTAbutton />
         </div>
         <div class="col-6">
           <img
-            class="img-fluid"
+            class="img-fluid hero-background"
             src="../assets/styles/images/home-movation-hero-image.png"
             alt="" />
         </div>
@@ -54,8 +63,17 @@ export default {
 </template>
 
 <style lang="scss">
-.background {
-  // background-image: url('../assets/styles/images/');
+@use "../assets/styles/general.scss" as *;
+@use "../assets/styles/partials/variables" as *;
+.section-background {
+  background-image: url("../assets/styles/images/background-pattern-wavify.png");
+  background-color: $athens-grey;
+
+  .hero-background {
+    background-image: url("../assets/styles/images/home-movation-shape-face-600x534.png");
+    // background-size: cover;
+    background-position: bottom;
+  }
 }
 
 .header {
@@ -63,11 +81,11 @@ export default {
   justify-content: space-between;
   padding-top: 1rem;
 
-  img {
+  .logo {
     width: 10rem;
   }
 
-  ul {
+  nav ul {
     list-style-type: none;
 
     li {
@@ -84,5 +102,17 @@ export default {
   .social-links span {
     padding: 0 0.8rem;
   }
+}
+
+h1.hero-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  padding: 1.5rem 15rem 1.5rem 0;
+}
+
+p.hero-content {
+  line-height: 2rem;
+  padding: 0 11rem 2rem 0;
+  font-weight: lighter;
 }
 </style>
