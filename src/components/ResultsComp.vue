@@ -1,27 +1,37 @@
 <script>
 export default {
   name: "ResultsComp",
+  data() {
+    return {
+      results: [
+        {
+          data: "1.926",
+          category: "Finished Sessions",
+        },
+        {
+          data: "100%",
+          category: "Satisfaction Rate",
+        },
+        {
+          data: "3092+",
+          category: "Enrolled Learners",
+        },
+        {
+          data: "200",
+          category: "Online Instructors",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <template>
-  <div class="container">
-    <div class="row text-align-center">
-      <div class="col-3">
-        <h3>1.926</h3>
-        <p>FINISHED SESSIONS</p>
-      </div>
-      <div class="col-3">
-        <h3>100%</h3>
-        <p>SATISFACTION RATE</p>
-      </div>
-      <div class="col-3">
-        <h3>3092+</h3>
-        <p>ENROLLED LEARNERS</p>
-      </div>
-      <div class="col-3">
-        <h3>200</h3>
-        <p>ONLINE INSTRUCTORS</p>
+  <div class="container my-5 py-5">
+    <div class="row text-center">
+      <div class="col-3" v-for="result in results">
+        <h3 class="green">{{ result.data }}</h3>
+        <p class="grey">{{ result.category.toUpperCase() }}</p>
       </div>
     </div>
   </div>
