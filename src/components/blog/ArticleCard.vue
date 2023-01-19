@@ -16,7 +16,8 @@ export default {
 
 <style lang="scss">
 .article-card {
-  padding: 0 1rem;
+  width: calc(100% / 4 - 1rem);
+  padding: 0.5rem;
 
   span {
     display: inline-block;

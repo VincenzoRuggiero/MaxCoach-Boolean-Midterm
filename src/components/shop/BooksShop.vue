@@ -27,7 +27,7 @@ export default {
             <li>Give the right advice</li>
             <li>Fascinating examples of alpha man</li>
           </ul>
-          <CTAbutton />
+          <CTAbutton buttonText="Get Free Book" />
         </div>
         <div class="col-6 d-flex">
           <BooksCards />
@@ -38,9 +38,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../../assets/styles/partials/variables" as *;
 .left {
   span {
     display: inline-block;
+  }
+
+  h2 {
+    color: $congress-blue;
   }
 
   ul li {

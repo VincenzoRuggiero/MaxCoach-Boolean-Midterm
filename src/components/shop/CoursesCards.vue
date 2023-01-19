@@ -55,9 +55,6 @@ export default {
         .href;
     },
   },
-  computed() {
-    getImagePath();
-  },
 };
 </script>
 
@@ -69,20 +66,26 @@ export default {
         <span class="big-price">${{ content.price }}</span
         >.{{ content.cents }}
       </h5>
-      <h6 class="py-3 text-start">
+      <h5 class="py-3 text-start course-title">
         {{ content.title }}
-      </h6>
+      </h5>
       <div class="course-info grey">
-        <span>{{ content.lessons }} lesson(s)</span> <span>50 Students</span>
+        <span>{{ content.lessons }} lessons</span> <span>50 Students</span>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+@use "../../assets/styles/partials/variables" as *;
+
 .course-card {
   border: none;
   padding: 0 1rem;
+
+  .course-title {
+    color: $congress-blue;
+  }
 
   .card-price {
     font-size: 0.9rem;

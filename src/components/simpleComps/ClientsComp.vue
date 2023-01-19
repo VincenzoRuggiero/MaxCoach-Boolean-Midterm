@@ -28,7 +28,7 @@ export default {
   methods: {
     getImagePath(image) {
       return new URL(
-        `../assets/styles/images/client-${image}-primary.png`,
+        `../../assets/styles/images/client-${image}-primary.png`,
         import.meta.url
       ).href;
     },

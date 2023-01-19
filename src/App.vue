@@ -1,13 +1,14 @@
 <script>
 import HeaderComp from "./components/HeaderComp.vue";
-import ResultsComp from "./components/ResultsComp.vue";
+import ResultsComp from "./components/simpleComps/ResultsComp.vue";
 import PresentationComp from "./components/PresentationComp.vue";
 import CoursesShop from "./components/shop/CoursesShop.vue";
 import CourseCards from "./components/shop/CoursesCards.vue";
 import BooksShop from "./components/shop/BooksShop.vue";
-import ClientsComp from "./components/ClientsComp.vue";
+import ClientsComp from "./components/simpleComps/ClientsComp.vue";
 import TestimonialsComp from "./components/TestimonialsComp.vue";
 import BlogComp from "./components/blog/BlogComp.vue";
+import FooterComp from "./components/FooterComp.vue";
 
 export default {
   components: {
@@ -20,6 +21,7 @@ export default {
     ClientsComp,
     TestimonialsComp,
     BlogComp,
+    FooterComp,
   },
 };
 </script>
@@ -33,6 +35,7 @@ export default {
   <ClientsComp />
   <TestimonialsComp />
   <BlogComp />
+  <FooterComp />
 </template>
 
 <style lang="scss">

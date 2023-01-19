@@ -1,17 +1,25 @@
 <script>
 export default {
   name: "CTAbutton",
+  props: {
+    buttonText: {
+      type: String,
+      default: () => "Cliccami",
+    },
+  },
 };
 </script>
 
 <template>
-  <a class="button">Get Started For Free <span class="arrow">&#x2192;</span></a>
+  <button class="button">
+    {{ buttonText }}<span class="arrow">&#x2192;</span>
+  </button>
 </template>
 
 <style lang="scss" scoped>
 @use "../assets/styles/partials/variables" as *;
 
-.button {
+button {
   color: $white;
   background-color: $mountain-meadow;
   text-decoration: none;

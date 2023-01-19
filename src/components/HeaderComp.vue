@@ -49,7 +49,7 @@ export default {
             Success isn't overnight. It's when everyday you get a little better
             than the day before. It all adds up.
           </p>
-          <CTAbutton />
+          <CTAbutton buttonText="Get Started For Free" />
         </div>
         <div class="col-6">
           <img
@@ -95,6 +95,7 @@ export default {
         display: inline-block;
         padding: 0 1rem;
         text-decoration: none;
+        color: $congress-blue;
       }
     }
   }

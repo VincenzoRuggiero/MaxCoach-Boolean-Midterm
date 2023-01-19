@@ -15,17 +15,17 @@ export default {
   <div class="container py-5">
     <div class="row text-center">
       <div class="col-12">
-        <span>Begin Your Journey at Maxcoach</span>
+        <span class="section-name">Begin Your Journey at Maxcoach</span>
       </div>
       <div class="col-12">
-        <h2>Latest <span>Online Courses</span></h2>
+        <h1 class="py-4">Latest <span class="green">Online Courses</span></h1>
       </div>
     </div>
     <!-- Elenco corsi -->
     <div class="col d-flex flex-wrap py-3 justify-content-center">
       <CoursesCards />
       <br />
-      <CTAbutton />
+      <CTAbutton buttonText="View All Courses" class="mt-5" />
     </div>
   </div>
 </template>

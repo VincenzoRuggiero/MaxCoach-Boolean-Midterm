@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="container">
-    <div class="row d-flex align-items-center py-5">
+    <div class="row d-flex align-items-center py-2">
       <div class="col-6 left">
         <span class="section-name green">About Me</span>
         <h2 class="about-heading">
@@ -38,23 +38,40 @@ export default {
           src="../assets/styles/images/icon-youtube-play.png"
           alt="YouTube icon" />
       </div>
-      <div class="col-6">
-        <h2 class="py-5">
+      <div class="col-6 right">
+        <h2>
           "Every morning you have two choices: continue to sleep with your
           dreams, or wake up and chase them."
         </h2>
-        <img src="../assets/styles/images/home-movation-shape-01.png" alt="" />
-        <h4>Kaixa Stark</h4>
+        <img
+          class="glyph"
+          src="../assets/styles/images/home-movation-shape-01.png"
+          alt="" />
+        <h4 class="pt-3">Kaixa Stark</h4>
         <span class="section-name">Wingman</span>
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 span.section-name.green {
   margin-bottom: 4rem;
 }
+.right {
+  padding: 3rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-right: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .glyph {
+    margin-top: 1.5rem;
+  }
+}
+
 .about-heading {
   padding-top: 3rem;
   padding-right: 6rem;
