@@ -27,7 +27,7 @@ export default {
             <li>Give the right advice</li>
             <li>Fascinating examples of alpha man</li>
           </ul>
-          <CTAbutton buttonText="Get Free Book" />
+          <CTAbutton buttonText="Get Free Book" hide="true" />
         </div>
         <div class="col-6 d-flex">
           <BooksCards />

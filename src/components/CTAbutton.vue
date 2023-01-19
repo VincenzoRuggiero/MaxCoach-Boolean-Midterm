@@ -6,13 +6,14 @@ export default {
       type: String,
       default: () => "Cliccami",
     },
+    hide: false,
   },
 };
 </script>
 
 <template>
   <button class="button">
-    {{ buttonText }}<span class="arrow">&#x2192;</span>
+    {{ buttonText }}<span v-if="!hide" class="arrow">&#x2192;</span>
   </button>
 </template>
 
