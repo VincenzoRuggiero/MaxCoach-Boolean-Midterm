@@ -39,4 +39,12 @@ export default {
 @use "../node_modules/bootstrap/scss/bootstrap.scss" as *;
 @use "./assets/styles/general.scss" as *;
 @use "./assets/styles/partials/variables" as *;
+
+.section-name {
+  text-transform: uppercase;
+}
+
+.green {
+  color: $mountain-meadow;
+}
 </style>
