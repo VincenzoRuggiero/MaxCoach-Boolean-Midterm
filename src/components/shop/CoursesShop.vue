@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container py-5">
     <div class="row text-center">
       <div class="col-12">
         <span>Begin Your Journey at Maxcoach</span>
@@ -21,12 +21,12 @@ export default {
         <h2>Latest <span>Online Courses</span></h2>
       </div>
     </div>
-    <div class="col-12 d-flex flex-wrap">
+    <!-- Elenco corsi -->
+    <div class="col d-flex flex-wrap py-3 justify-content-center">
       <CoursesCards />
+      <br />
+      <CTAbutton />
     </div>
-    <!-- <div class="col-12"> -->
-    <!-- <CTAbutton /> -->
-    <!-- </div> -->
   </div>
 </template>
 
