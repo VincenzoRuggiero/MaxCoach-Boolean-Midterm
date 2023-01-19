@@ -13,14 +13,14 @@ export default {
   <div class="container py-5">
     <div class="row">
       <div class="col-12">
-        <span>Blog Updated</span>
+        <span class="section-name">Blog Updated</span>
         <h2>Interesting <span> articles updated</span> daily</h2>
         <div class="col-12 d-flex">
           <ArticleCard v-for="n in 4" />
         </div>
         <div class="col-12">
           <div class="row text-center">
-            <a href="#">View all posts</a>
+            <a class="section-name green" href="#">View all posts</a>
           </div>
         </div>
       </div>

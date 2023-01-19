@@ -41,7 +41,7 @@ export default {
     <div class="container mt-5">
       <div class="row align-items-center">
         <div class="col-6">
-          <span class="section-name">I'm wingman</span>
+          <span class="section-name grey">I'm wingman</span>
           <h1 class="hero-heading">
             Peace on Earth A Wonderful Wish But No Way
           </h1>
@@ -105,8 +105,8 @@ export default {
 }
 
 h1.hero-heading {
-  font-family: "Playfair Display", serif;
   font-size: 3rem;
+  line-height: 4rem;
   padding: 1.5rem 15rem 1.5rem 0;
 }
 

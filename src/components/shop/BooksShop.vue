@@ -14,7 +14,7 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <span>Book Store Online</span>
+          <span class="section-name">Book Store Online</span>
           <h2>
             Be Alpha With <br />
             <span>Wingman's Book</span>

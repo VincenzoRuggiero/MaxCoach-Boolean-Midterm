@@ -7,7 +7,9 @@ export default {
 <template>
   <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-      <div class="col-6 carousel-bg waves-pattern"></div>
+      <div class="col-6 carousel-bg waves-pattern">
+        <span class="section-name green">Real stories</span>
+      </div>
       <div class="col-6 man"></div>
     </div>
   </div>
@@ -18,7 +20,7 @@ export default {
 
 .carousel-bg {
   background-color: $athens-grey;
-  height: 60vh;
+  height: 40vh;
 }
 
 .waves-pattern {

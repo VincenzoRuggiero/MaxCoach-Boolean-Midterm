@@ -6,17 +6,19 @@ export default {
 
 <template>
   <div class="container">
-    <div class="row d-flex align-items-center">
-      <div class="col-6">
-        <span>About Me</span>
-        <h2>How to Be an Alpha Male: The 15 Habits of True Alphas</h2>
+    <div class="row d-flex align-items-center py-5">
+      <div class="col-6 left">
+        <span class="section-name green">About Me</span>
+        <h2 class="about-heading">
+          How to Be an Alpha Male: The 15 Habits of True Alphas
+        </h2>
       </div>
-      <div class="col-6">
-        <h5>
-          Want to learn how to be <span>an alpha male</span>? How to be more
-          masculine? How to be the man you've always wanted to be?
+      <div class="col-6 right">
+        <h5 class="pt-5">
+          Want to learn how to be <span class="green">an alpha male</span>? How
+          to be more masculine? How to be the man you've always wanted to be?
         </h5>
-        <p>
+        <p class="grey">
           Your goal is to show the consistency of business, core values, and
           customer care. Punctuality, responsability, individuality, accuracy,
           enthusiasm - you have to clearly explain how these qualities are
@@ -24,26 +26,62 @@ export default {
           you do.
         </p>
       </div>
-      <div class="col-8">
+    </div>
+    <div class="row py-5">
+      <div class="col-6 embed">
         <img
-          class="img-fluid"
+          class="img-fluid video-embed"
           src="../assets/styles/images/home-movation-video-poster-670x450.jpg"
           alt="" />
         <img
+          class="play-icon"
           src="../assets/styles/images/icon-youtube-play.png"
           alt="YouTube icon" />
       </div>
-      <div class="col-4">
-        <h2>
+      <div class="col-6">
+        <h2 class="py-5">
           "Every morning you have two choices: continue to sleep with your
           dreams, or wake up and chase them."
         </h2>
         <img src="../assets/styles/images/home-movation-shape-01.png" alt="" />
         <h4>Kaixa Stark</h4>
-        <span>Wingman</span>
+        <span class="section-name">Wingman</span>
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+span.section-name.green {
+  margin-bottom: 4rem;
+}
+.about-heading {
+  padding-top: 3rem;
+  padding-right: 6rem;
+  line-height: 4rem;
+  font-size: 3rem;
+}
+
+.right h5 {
+  font-size: 1.2rem;
+}
+.right p {
+  font-size: 1rem;
+}
+
+.embed {
+  position: relative;
+
+  .video-embed {
+    object-fit: cover;
+  }
+
+  .play-icon {
+    width: 18%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+</style>

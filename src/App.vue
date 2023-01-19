@@ -42,9 +42,15 @@ export default {
 
 .section-name {
   text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
 }
 
 .green {
   color: $mountain-meadow;
+}
+
+.grey {
+  color: $corduray;
 }
 </style>
