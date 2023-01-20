@@ -8,6 +8,11 @@ export default {
     },
     hide: false,
   },
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
 
@@ -28,6 +33,9 @@ button {
   font-weight: bold;
   border-radius: 5px;
 
+  &:hover {
+    background-color: #3f3a64;
+  }
   .arrow {
     margin-left: 0.7rem;
   }
