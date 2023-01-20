@@ -35,6 +35,7 @@ button {
 
   &:hover {
     background-color: #3f3a64;
+    transition: all 0.2s ease;
   }
   .arrow {
     margin-left: 0.7rem;

@@ -23,8 +23,8 @@ export default {
   padding: 0.5rem;
 
   img:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-in;
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: all 1.5s cubic-bezier(0, 0, 0, 1);
   }
 
   span {

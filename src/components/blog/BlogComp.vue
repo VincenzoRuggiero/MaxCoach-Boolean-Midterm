@@ -82,6 +82,7 @@ export default {
 
   &:hover {
     color: $congress-blue;
+    transition: all 0.2s ease;
   }
 }
 </style>
