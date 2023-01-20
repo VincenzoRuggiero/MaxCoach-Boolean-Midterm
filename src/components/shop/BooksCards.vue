@@ -35,10 +35,53 @@ export default {
     <h6>{{ content.title }}</h6>
     <h5 class="card-price green"><span class="big-price">$30</span>.00</h5>
   </div>
+  <div class="options d-flex flex-column">
+    <div class="option">
+      <font-awesome-icon class="icon" icon="fa-solid fa-magnifying-glass" />
+    </div>
+    <div class="option">
+      <font-awesome-icon class="icon" icon="fa-solid fa-cart-shopping" />
+    </div>
+    <div class="option">
+      <font-awesome-icon class="icon" icon="fa-regular fa-heart" />
+    </div>
+    <div class="option">
+      <font-awesome-icon class="icon" icon="fa-solid fa-signal" />
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
+.book-card:hover {
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
 .big-price {
   font-size: 1.6rem;
+}
+
+.options {
+  align-items: center;
+
+  .option {
+    position: relative;
+    top: 3rem;
+    right: 3rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .icon {
+      padding: 15px;
+    }
+  }
 }
 </style>
