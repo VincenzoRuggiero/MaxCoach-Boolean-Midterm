@@ -23,27 +23,39 @@ export default {
         <ul>
           <li>
             <a href="#">Home</a>
-            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            <font-awesome-icon
+              class="dropdown"
+              icon="fa-solid fa-chevron-down" />
           </li>
           <li>
             <a href="#">Pages</a>
-            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            <font-awesome-icon
+              class="dropdown"
+              icon="fa-solid fa-chevron-down" />
           </li>
           <li>
             <a href="#">Courses</a>
-            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            <font-awesome-icon
+              class="dropdown"
+              icon="fa-solid fa-chevron-down" />
           </li>
           <li>
             <a href="#">Features</a>
-            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            <font-awesome-icon
+              class="dropdown"
+              icon="fa-solid fa-chevron-down" />
           </li>
           <li>
             <a href="#">Blog</a>
-            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            <font-awesome-icon
+              class="dropdown"
+              icon="fa-solid fa-chevron-down" />
           </li>
           <li>
             <a href="#">Shop</a>
-            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+            <font-awesome-icon
+              class="dropdown"
+              icon="fa-solid fa-chevron-down" />
           </li>
         </ul>
       </nav>
@@ -115,6 +127,11 @@ export default {
         padding: 0 1rem;
         text-decoration: none;
         color: $congress-blue;
+      }
+
+      .dropdown {
+        position: relative;
+        right: 0.5rem;
       }
     }
   }
