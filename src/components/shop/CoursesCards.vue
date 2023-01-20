@@ -70,13 +70,20 @@ export default {
         {{ content.title }}
       </h5>
       <div class="course-info grey">
-        <span>{{ content.lessons }} lessons</span> <span>50 Students</span>
+        <span
+          ><font-awesome-icon class="icon" icon="fa-regular fa-file-lines" />
+          {{ content.lessons }} lessons</span
+        >
+        <span
+          ><font-awesome-icon class="icon" icon="fa-regular fa-user" /> 50
+          Students</span
+        >
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "../../assets/styles/partials/variables" as *;
 
 .course-card {
@@ -92,6 +99,13 @@ export default {
 
     .big-price {
       font-size: 1.6rem;
+    }
+  }
+  .course-info span {
+    padding: 0 1rem;
+
+    .icon {
+      margin-right: 0.3rem;
     }
   }
 }

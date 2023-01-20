@@ -15,7 +15,14 @@ export default {
             <p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
             <p><a href="#">support@maxcoach.com</a></p>
           </address>
-          <div class="social-icons"></div>
+          <div class="social-link fs-3">
+            <font-awesome-icon
+              class="icon"
+              icon="fa-brands fa-square-facebook " />
+            <font-awesome-icon class="icon" icon="fa-brands fa-twitter" />
+            <font-awesome-icon class="icon" icon="fa-brands fa-instagram" />
+            <font-awesome-icon class="icon" icon="fa-brands fa-linkedin" />
+          </div>
         </div>
         <div class="col-3 d-flex">
           <div class="col-6">
@@ -60,6 +67,11 @@ export default {
 .background {
   background-color: $cinder;
   color: $silver-sand;
+
+  .social-link .icon {
+    padding-right: 2rem;
+    color: grey;
+  }
 
   address p {
     line-height: 2.5rem;

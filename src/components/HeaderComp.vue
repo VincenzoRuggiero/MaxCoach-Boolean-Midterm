@@ -12,8 +12,8 @@ export default {
 <template>
   <!-- Header  -->
   <div class="section-background">
-    <div class="container header">
-      <div class="div">
+    <div class="container header d-flex align-content-center">
+      <div>
         <img
           class="logo"
           src="../assets/styles/images/dark-logo.png"
@@ -21,19 +21,37 @@ export default {
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
+          <li>
+            <a href="#">Home</a>
+            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          </li>
+          <li>
+            <a href="#">Pages</a>
+            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          </li>
+          <li>
+            <a href="#">Courses</a>
+            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          </li>
+          <li>
+            <a href="#">Features</a>
+            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          </li>
+          <li>
+            <a href="#">Blog</a>
+            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          </li>
+          <li>
+            <a href="#">Shop</a>
+            <font-awesome-icon icon="fa-solid fa-chevron-down" />
+          </li>
         </ul>
       </nav>
-      <div class="social-links">
-        <span>Twitter</span>
-        <span>FB</span>
-        <span>IG</span>
-        <span>LinkedIn</span>
+      <div class="social-links fs-5">
+        <font-awesome-icon class="icon" icon="fa-brands fa-twitter" />
+        <font-awesome-icon class="icon" icon="fa-brands fa-facebook-f" />
+        <font-awesome-icon class="icon" icon="fa-brands fa-instagram" />
+        <font-awesome-icon class="icon" icon="fa-brands fa-linkedin" />
       </div>
     </div>
 
@@ -92,6 +110,7 @@ export default {
       display: inline;
 
       a {
+        font-size: 1.2rem;
         display: inline-block;
         padding: 0 1rem;
         text-decoration: none;
@@ -100,7 +119,7 @@ export default {
     }
   }
 
-  .social-links span {
+  .social-links .icon {
     padding: 0 0.8rem;
   }
 }

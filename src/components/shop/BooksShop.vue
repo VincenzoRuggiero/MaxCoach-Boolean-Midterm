@@ -21,11 +21,27 @@ export default {
             Be Alpha With <br />
             <span class="green">Wingman's Book</span>
           </h2>
-          <ul class="py-4 grey">
-            <li>Help you understand yourself better</li>
-            <li>Revealing mature tips</li>
-            <li>Give the right advice</li>
-            <li>Fascinating examples of alpha man</li>
+          <ul class="py-4 grey fa-ul">
+            <li>
+              <font-awesome-icon
+                class="icon green"
+                icon="fa-solid fa-check" />Help you understand yourself better
+            </li>
+            <li>
+              <font-awesome-icon
+                class="icon green"
+                icon="fa-solid fa-check" />Revealing mature tips
+            </li>
+            <li>
+              <font-awesome-icon
+                class="icon green"
+                icon="fa-solid fa-check" />Give the right advice
+            </li>
+            <li>
+              <font-awesome-icon
+                class="icon green"
+                icon="fa-solid fa-check" />Fascinating examples of alpha man
+            </li>
           </ul>
           <CTAbutton buttonText="Get Free Book" hide="true" />
         </div>
@@ -48,8 +64,18 @@ export default {
     color: $congress-blue;
   }
 
-  ul li {
-    line-height: 2.2rem;
+  ul {
+    list-style: none;
+    margin: 0 0 1rem 0;
+    padding: 0 1rem 0 0;
+
+    .icon {
+      margin-right: 1rem;
+    }
+
+    li {
+      line-height: 2.2rem;
+    }
   }
 
   .books-shop-heading {
