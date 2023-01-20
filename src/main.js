@@ -17,6 +17,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 
 /* add icons to the library */
 library.add(faChevronDown);
@@ -28,5 +29,6 @@ library.add(faLinkedin);
 library.add(faFileLines);
 library.add(faUser);
 library.add(faCheck);
+library.add(faCalendar);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

@@ -74,4 +74,14 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "../../assets/styles/partials/variables" as *;
+
+.section-name {
+  font-weight: bold;
+
+  &:hover {
+    color: $congress-blue;
+  }
+}
+</style>

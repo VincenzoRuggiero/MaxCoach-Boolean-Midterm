@@ -41,7 +41,7 @@ export default {
     <div class="row">
       <div class="col-2" v-for="logo in logos">
         <img
-          class="img-fluid opacity-50"
+          class="img-fluid logo"
           :src="getImagePath(logo.img)"
           alt="Client logo" />
       </div>
@@ -49,4 +49,13 @@ export default {
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.logo {
+  opacity: 0.5;
+
+  &:hover {
+    transition: all 0.2s ease-in;
+    opacity: 1;
+  }
+}
+</style>

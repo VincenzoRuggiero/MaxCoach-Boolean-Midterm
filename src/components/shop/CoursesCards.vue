@@ -87,8 +87,16 @@ export default {
 @use "../../assets/styles/partials/variables" as *;
 
 .course-card {
+  width: calc(100% / 3 - 2rem);
   border: none;
-  padding: 0 1rem;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
 
   .course-title {
     color: $congress-blue;
@@ -102,7 +110,7 @@ export default {
     }
   }
   .course-info span {
-    padding: 0 1rem;
+    padding-right: 1rem;
 
     .icon {
       margin-right: 0.3rem;

@@ -127,6 +127,10 @@ export default {
         padding: 0 1rem;
         text-decoration: none;
         color: $congress-blue;
+
+        &:hover {
+          color: $mountain-meadow;
+        }
       }
 
       .dropdown {
@@ -138,6 +142,10 @@ export default {
 
   .social-links .icon {
     padding: 0 0.8rem;
+
+    &:hover {
+      color: $mountain-meadow;
+    }
   }
 }
 

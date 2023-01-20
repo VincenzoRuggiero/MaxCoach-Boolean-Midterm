@@ -71,6 +71,10 @@ export default {
   .social-link .icon {
     padding-right: 2rem;
     color: grey;
+
+    &:hover {
+      color: $white;
+    }
   }
 
   address p {
@@ -81,6 +85,10 @@ export default {
   address a {
     text-decoration: none;
     color: grey;
+
+    &:hover {
+      color: white;
+    }
   }
 
   h5 {
@@ -92,6 +100,10 @@ export default {
 
     li {
       line-height: 2.5rem;
+
+      &:hover {
+        color: white;
+      }
     }
   }
 }
