@@ -15,7 +15,7 @@ export default {
       class="controls d-flex flex-column justify-content-center align-items-center justify-content-between">
       <img src="../assets/styles/images/image.png" alt="" />
       <p>1 / 4</p>
-      <img src="../assets/styles/images/image (1).png" alt="" />
+      <img src="../assets/styles/images/image(1).png" alt="" />
     </div>
     <div class="row d-flex justify-content-center">
       <div class="col-6 carousel p-5 carousel-bg waves-pattern text-center">

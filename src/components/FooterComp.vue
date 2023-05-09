@@ -53,9 +53,11 @@ export default {
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 pb-5 text-center">
-        <span>&copy; 2020 Maxcoach. All Rights Reserved</span>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-5 text-center overflow">
+          <span>&copy; 2020 Maxcoach. All Rights Reserved</span>
+        </div>
       </div>
     </div>
   </div>
@@ -63,6 +65,10 @@ export default {
 
 <style lang="scss">
 @use "../assets/styles/partials/variables" as *;
+
+.overflow {
+  overflow-x: hidden;
+}
 
 .background {
   background-color: $cinder;
