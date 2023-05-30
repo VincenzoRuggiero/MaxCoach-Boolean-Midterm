@@ -22,7 +22,7 @@ export default {
       </div>
     </div>
     <!-- Elenco corsi -->
-    <div class="col d-flex flex-wrap py-3 justify-content-center">
+    <div class="col-12 d-flex flex-wrap justify-content-center">
       <CoursesCards />
       <br />
       <CTAbutton buttonText="View All Courses" class="mt-5" />

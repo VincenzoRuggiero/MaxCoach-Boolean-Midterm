@@ -68,9 +68,9 @@ export default {
     </div>
 
     <!-- Hero Section -->
-    <div class="container mt-5">
+    <div class="container mt-5 p-4">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <span class="section-name grey">I'm wingman</span>
           <h1 class="hero-heading">
             Peace on Earth A Wonderful Wish But No Way
@@ -81,7 +81,7 @@ export default {
           </p>
           <CTAbutton buttonText="Get Started For Free" />
         </div>
-        <div class="col-6">
+        <div class="col-md-6 d-none">
           <img
             class="img-fluid hero-background"
             src="../assets/styles/images/home-movation-hero-image.png"

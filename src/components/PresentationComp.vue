@@ -7,13 +7,13 @@ export default {
 <template>
   <div class="container">
     <div class="row d-flex align-items-center py-2">
-      <div class="col-6 left">
+      <div class="col-12 col-md-6 left">
         <span class="section-name green">About Me</span>
         <h2 class="about-heading">
           How to Be an Alpha Male: The 15 Habits of True Alphas
         </h2>
       </div>
-      <div class="col-6 right">
+      <div class="col-12 col-md-6 right">
         <h5 class="pt-5">
           Want to learn how to be <span class="green">an alpha male</span>? How
           to be more masculine? How to be the man you've always wanted to be?
@@ -28,17 +28,13 @@ export default {
       </div>
     </div>
     <div class="row py-5">
-      <div class="col-6 embed">
+      <div class="col-12 col-md-6 embed">
         <img
           class="img-fluid video-embed"
           src="../assets/styles/images/home-movation-video-poster-670x450.jpg"
           alt="" />
-        <img
-          class="play-icon"
-          src="../assets/styles/images/icon-youtube-play.png"
-          alt="YouTube icon" />
       </div>
-      <div class="col-6 right">
+      <div class="col-12 col-md-6 right">
         <h2>
           "Every morning you have two choices: continue to sleep with your
           dreams, or wake up and chase them."

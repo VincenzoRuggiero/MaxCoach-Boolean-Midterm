@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <div class="article-card">
+  <div class="article-card col-6 col-lg-3">
     <img class="img-fluid" :src="image" alt="Article featured image" />
     <span class="grey"
       ><font-awesome-icon class="icon" icon="fa-regular fa-calendar" />
@@ -19,7 +19,6 @@ export default {
 
 <style lang="scss">
 .article-card {
-  width: calc(100% / 4 - 1rem);
   padding: 0.5rem;
 
   img:hover {

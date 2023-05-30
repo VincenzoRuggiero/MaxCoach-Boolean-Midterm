@@ -15,7 +15,7 @@ export default {
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-6 left">
+        <div class="col-12 d-flex flex-column justify-content-center left">
           <span class="section-name">Book Store Online</span>
           <h2 class="books-shop-heading my-2">
             Be Alpha With <br />

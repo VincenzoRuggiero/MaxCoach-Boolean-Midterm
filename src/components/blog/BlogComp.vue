@@ -25,7 +25,7 @@ export default {
         {
           img: "motivation-blog-02-480x325.jpg",
           date: "May 13, 2020",
-          title: "11 Super Useful Tips for Small-Business Owners",
+          title: "11 Super Useful Tips for Small-Business",
           excerpt:
             "Being a small-business owner poses a ton of challenges. We ...",
         },
@@ -56,7 +56,7 @@ export default {
         <h2 class="py-3">
           Interesting <span class="green"> articles updated</span> daily
         </h2>
-        <div class="col-12 d-flex mt-5">
+        <div class="col-12 d-flex flex-wrap mt-5">
           <ArticleCard
             v-for="article in articles"
             :image="getImagePath(article.img)"

@@ -59,17 +59,17 @@ export default {
 </script>
 
 <template>
-  <div class="course-card col-4" v-for="content in cardContents">
+  <div class="course-card col-12 col-md-6" v-for="content in cardContents">
     <img class="img-fluid" :src="getImagePath(content.img)" alt="" />
-    <div class="card-content p-4">
-      <h5 class="card-price green">
+    <div class="card-content">
+      <h5 class="card-price px-3 py-2 green">
         <span class="big-price">${{ content.price }}</span
         >.{{ content.cents }}
       </h5>
-      <h5 class="py-3 text-start course-title">
+      <h5 class="p-3 text-start course-title">
         {{ content.title }}
       </h5>
-      <div class="course-info grey">
+      <div class="course-info px-3 grey">
         <span
           ><font-awesome-icon class="icon" icon="fa-regular fa-file-lines" />
           {{ content.lessons }} lessons</span
@@ -87,7 +87,7 @@ export default {
 @use "../../assets/styles/partials/variables" as *;
 
 .course-card {
-  width: calc(100% / 3 - 2rem);
+  max-width: 20rem;
   border: none;
   margin: 0 1rem;
   margin-bottom: 2rem;

@@ -7,8 +7,8 @@ export default {
 <template>
   <div class="background">
     <div class="container py-5">
-      <div class="row">
-        <div class="col-6">
+      <div class="row d-flex">
+        <div class="col-12 col-md-6">
           <h5>Address</h5>
           <address>
             <p>382 NE 191st St #87394 Miami, FL 33179-3899</p>
@@ -24,25 +24,13 @@ export default {
             <font-awesome-icon class="icon" icon="fa-brands fa-linkedin" />
           </div>
         </div>
-        <div class="col-3 d-flex">
-          <div class="col-6">
-            <ul>
-              <h5>Explore</h5>
-              <li>Start here</li>
-              <li>Blog</li>
-              <li>About us</li>
-            </ul>
-          </div>
-          <div class="col-6 mt-2">
-            <ul>
-              <br />
-              <li>Success story</li>
-              <li>Courses</li>
-              <li>Contact us</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-3">
+        <div class="col-12 d-flex col-md-6">
+          <ul>
+            <h5>Explore</h5>
+            <li>Start here</li>
+            <li>Blog</li>
+            <li>About us</li>
+          </ul>
           <ul>
             <h5>Information</h5>
             <li>Membership</li>
